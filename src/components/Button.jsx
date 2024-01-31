@@ -9,7 +9,7 @@ export function Button (props) {
     };
 
     return (
-        <div className={`button ${isOperator(props.children)? "operator" : null}` }>
+        <div className={`button ${isOperator(props.children)? "operator" : null}` } onClick={ () => props.click(props.children)}>
             {props.children}
         </div>
     )
